@@ -24,3 +24,5 @@ php bin/console doctrine:migrations:migrate
 API testing Postman collection included (SF Project.postman_collection.json).
 
 UUID could be used instead of integer IDs, which makes things cleaner from API perspective.
+
+Other notes in specific code comments.

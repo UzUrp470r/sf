@@ -1,0 +1,20 @@
+#define Controllers here in order to the have the default API Controller with last priority - seems that the priority annotation doesn't work as expected
+Project:
+    resource: App\Controller\ProjectController
+    type: annotation
+Task:
+    resource: App\Controller\TaskController
+    type: annotation
+ApiProject:
+    resource: App\Controller\Api\ProjectController
+    type: annotation
+ApiTask:
+    resource: App\Controller\Api\TaskController
+    type: annotation
+Api:
+    resource: App\Controller\Api\ApiController
+    type: annotation
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation

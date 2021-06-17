@@ -1,13 +1,26 @@
 # Symfony Test Project
 
-Simple Project and Task control system using Symfony 5, PHP8 and PostgreSQL 13.
+Simple Project and Task control system with API exposure using Symfony 5, Doctrine ORM, PHP8 and PostgreSQL 13.
+
+What is missing:
+* API and Web Authentication
+* .htaccess file
+* Proper UI
 
 Requirements:
-* installed PHP8 or
+* Installed PHP8 or
 ```bash
 docker pull php
 ```
-* PostgreSQL Server
+* Configured PostgreSQL Server - see .env file for reference
 ```bash
 docker pull postgres
 ```
+* Use PG dump file if needed (sf_project.dump) or run
+```bash
+php bin/console doctrine:migrations:migrate
+```
+
+API testing Postman collection included (SF Project.postman_collection.json).
+
+UUID could be used instead of integer IDs, which makes things cleaner from API perspective.

@@ -6,6 +6,8 @@ What is missing:
 * API and Web Authentication
 * .htaccess file
 * Proper UI
+* Corner cases testing and handling
+* Workflow (state machine) for the status transitions
 
 Requirements:
 * Installed PHP8 or
